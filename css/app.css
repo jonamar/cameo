@@ -3633,7 +3633,7 @@ h4,
 h5,
 h6 {
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
-  font-weight: normal;
+  font-weight: bold;
   font-style: normal;
   color: inherit;
   text-rendering: optimizeLegibility;
@@ -3680,6 +3680,10 @@ h6 {
     font-size: 1.25rem; }
   h6 {
     font-size: 1rem; } }
+
+@media screen and (min-width: 64em) {
+  h1 {
+    font-size: 3.75rem; } }
 
 a {
   color: #ff3333;
@@ -6927,6 +6931,11 @@ body {
     width: 100%;
     height: auto;
     margin-bottom: 15px; }
+  .talent .hero .hero-content {
+    background: #fff;
+    padding: 30px; }
+  .talent .hero h1 {
+    margin-top: 60px; }
   .talent .hero .full-text {
     display: none; }
   .talent .hero .downloads {
@@ -6987,7 +6996,9 @@ body {
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
-          justify-content: space-between; }
+          justify-content: space-between;
+  padding: 25px 15px 10px 15px;
+  border: 1px solid #666; }
   .talent .cv .audio audio {
     width: 80%; }
   .talent .cv .audio a {

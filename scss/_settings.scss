@@ -103,7 +103,7 @@ $block-grid-max: 8;
 // ------------------
 
 $header-font-family: $body-font-family;
-$header-font-weight: $global-weight-normal;
+$header-font-weight: bold;
 $header-font-style: normal;
 $font-family-monospace: Consolas, 'Liberation Mono', Courier, monospace;
 $header-sizes: (
@@ -123,6 +123,10 @@ $header-sizes: (
     'h5': 20,
     'h6': 16,
   ),
+  large: (
+    'h1': 60,
+  ),
+
 );
 $header-color: inherit;
 $header-lineheight: 1.4;

@@ -1,7 +1,7 @@
 <? include "inc/header.php"; ?>
   
   <article class="talent">
-    <section class="row hero">
+    <section class="row hero align-justify">
       <div class="medium-6 columns">
         <img src="/img/test.jpg" alt="">
         <div class="downloads">
@@ -10,8 +10,8 @@
           <a class="hollow button" href="#"><i class="fi-mail"> Partager le CV</i></a> 
         </div>
       </div>
-      <div class="medium-6 columns">
-        <h1>Carl Béchard</h1>
+      <div class="medium-5 columns hero-content">
+        <h1>Carla Béchard</h1>
         <ul class="stats">
           <li><strong>Taille</strong> 5' 10"</li>
           <li><strong>Poids</strong> 155 lbs</li>
@@ -34,7 +34,7 @@
             <p>Carl enseigne aussi depuis plusieurs années au Conservatoire d’art dramatique de Montréal.</p>
           </div>
 
-          <a href="#" class="clampToggle">
+          <a href="#" class="clampToggle float-right">
             <span class="opened">Afficher la suite <i class="fi-plus"></i></span>
             <span class="closed">Fermer <i class="fi-minus"></i></span>
           </a>
@@ -43,13 +43,11 @@
     </section>
     <section class="row cv">
       <div class="columns medium-4">
-        <h3>Démo jeux</h3>
+        <!-- <h3>Démo jeux</h3> -->
         <div class="flex-video widescreen">
           <iframe width="500" height="281" src="https://www.youtube.com/embed/51nSUBEw5CY?feature=oembed" frameborder="0" allowfullscreen=""></iframe>
         </div>
-
-        <h3>Démo audio</h3>
-        
+        <!-- <h3>Démo audio</h3> -->
         <div class="audio">
           <audio controls>
             <source src="horse.ogg" type="audio/ogg">
@@ -70,12 +68,9 @@
           </audio>
           <a class="hollow button" href="#"><i class="fi-arrow-down"></i></a> 
         </div>
-
-
       </div>
       <div class="columns medium-8">
-
-        <h3>Galerie photo</h3>
+        <!-- <h3>Galerie photo</h3> -->
         <div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit>
           <ul class="orbit-container">
             <button class="orbit-previous"><span class="show-for-sr">Previous Slide</span>&#9664;&#xFE0E;</button>
@@ -112,42 +107,42 @@
           <a href="#cv6" class="secondary hollow button">Activités connexes</a>
         </div>
         <hr>
-        <h4 id="cv1">Prix et nominations</h4>
+        <h5 id="cv1">Prix et nominations</h5>
         <p>Nomination Masque / Meilleure interprétation masculine / OGRE / 1999</p>
         <p>Masque / Révélation de l’année pour la création / Et Vian! Dans la gueule… et Ceci n’est pas un Schmürz! / 1998</p>
         <p>Nomination Masque / Meilleure interprétation masculine, rôle de soutien  / La cantatrice chauve et La leçon / 1997</p>
         <p>Nomination Prix de la critique / Meilleure interprétation, rôle masculin / UBS / 1990</p>
         <hr>
 
-        <h4 id="cv2">Télévision</h4>
+        <h5 id="cv2">Télévision</h5>
         <p>Nomination Masque / Meilleure interprétation masculine / OGRE / 1999</p>
         <p>Nomination Prix de la critique / Meilleure interprétation, rôle masculin / UBS / 1990</p>
         <hr>
 
-        <h4 id="cv3">Cinéma</h4>
-        <p>Nomination Masque / Meilleure interprétation masculine / OGRE / 1999</p>
-        <p>Masque / Révélation de l’année pour la création / Et Vian! Dans la gueule… et Ceci n’est pas un Schmürz! / 1998</p>
-        <p>Nomination Masque / Meilleure interprétation masculine, rôle de soutien  / La cantatrice chauve et La leçon / 1997</p>
-        <p>Nomination Prix de la critique / Meilleure interprétation, rôle masculin / UBS / 1990</p>
-        <hr>
-
-        <h4 id="cv4">Théâtre</h4>
-        <p>Nomination Masque / Meilleure interprétation masculine / OGRE / 1999</p>
-        <p>Masque / Révélation de l’année pour la création / Et Vian! Dans la gueule… et Ceci n’est pas un Schmürz! / 1998</p>
-        <p>Nomination Masque / Meilleure interprétation masculine, rôle de soutien  / La cantatrice chauve et La leçon / 1997</p>
-        <p>Nomination Prix de la critique / Meilleure interprétation, rôle masculin / UBS / 1990</p>
-        <p>Nomination Masque / Meilleure interprétation masculine, rôle de soutien  / La cantatrice chauve et La leçon / 1997</p>
-        <p>Nomination Prix de la critique / Meilleure interprétation, rôle masculin / UBS / 1990</p>
-        <hr>
-
-        <h4 id="cv4">Mise en scène</h4>
+        <h5 id="cv3">Cinéma</h5>
         <p>Nomination Masque / Meilleure interprétation masculine / OGRE / 1999</p>
         <p>Masque / Révélation de l’année pour la création / Et Vian! Dans la gueule… et Ceci n’est pas un Schmürz! / 1998</p>
         <p>Nomination Masque / Meilleure interprétation masculine, rôle de soutien  / La cantatrice chauve et La leçon / 1997</p>
         <p>Nomination Prix de la critique / Meilleure interprétation, rôle masculin / UBS / 1990</p>
         <hr>
 
-        <h4 id="cv5">Activités connexes</h4>
+        <h5 id="cv4">Théâtre</h5>
+        <p>Nomination Masque / Meilleure interprétation masculine / OGRE / 1999</p>
+        <p>Masque / Révélation de l’année pour la création / Et Vian! Dans la gueule… et Ceci n’est pas un Schmürz! / 1998</p>
+        <p>Nomination Masque / Meilleure interprétation masculine, rôle de soutien  / La cantatrice chauve et La leçon / 1997</p>
+        <p>Nomination Prix de la critique / Meilleure interprétation, rôle masculin / UBS / 1990</p>
+        <p>Nomination Masque / Meilleure interprétation masculine, rôle de soutien  / La cantatrice chauve et La leçon / 1997</p>
+        <p>Nomination Prix de la critique / Meilleure interprétation, rôle masculin / UBS / 1990</p>
+        <hr>
+
+        <h5 id="cv4">Mise en scène</h5>
+        <p>Nomination Masque / Meilleure interprétation masculine / OGRE / 1999</p>
+        <p>Masque / Révélation de l’année pour la création / Et Vian! Dans la gueule… et Ceci n’est pas un Schmürz! / 1998</p>
+        <p>Nomination Masque / Meilleure interprétation masculine, rôle de soutien  / La cantatrice chauve et La leçon / 1997</p>
+        <p>Nomination Prix de la critique / Meilleure interprétation, rôle masculin / UBS / 1990</p>
+        <hr>
+
+        <h5 id="cv5">Activités connexes</h5>
         <p>Nomination Masque / Meilleure interprétation masculine / OGRE / 1999</p>
         <p>Masque / Révélation de l’année pour la création / Et Vian! Dans la gueule… et Ceci n’est pas un Schmürz! / 1998</p>
 
