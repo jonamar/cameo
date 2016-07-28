@@ -1,5 +1,7 @@
 @charset 'utf-8';
 
+@import '../fonts/foundation-icons';
+
 @import 'settings';
 @import 'foundation';
 @import 'motion-ui';
@@ -10,17 +12,17 @@
 @include foundation-typography;
 @include foundation-button;
 @include foundation-forms;
-// @include foundation-range-input;
-@include foundation-accordion;
-@include foundation-accordion-menu;
+//@include foundation-range-input;
+//@include foundation-accordion;
+//@include foundation-accordion-menu;
 @include foundation-badge;
-@include foundation-breadcrumbs;
+//@include foundation-breadcrumbs;
 @include foundation-button-group;
 @include foundation-callout;
-@include foundation-close-button;
+//@include foundation-close-button;
 @include foundation-menu;
 @include foundation-menu-icon;
-@include foundation-drilldown-menu;
+//@include foundation-drilldown-menu;
 @include foundation-dropdown;
 @include foundation-dropdown-menu;
 @include foundation-flex-video;
@@ -28,10 +30,10 @@
 @include foundation-media-object;
 @include foundation-off-canvas;
 @include foundation-orbit;
-@include foundation-pagination;
-@include foundation-progress-bar;
-// @include foundation-progress-element;
-// @include foundation-meter-element;
+//@include foundation-pagination;
+//@include foundation-progress-bar;
+//@include foundation-progress-element;
+//@include foundation-meter-element;
 @include foundation-slider;
 @include foundation-sticky;
 @include foundation-reveal;
@@ -48,3 +50,167 @@
 
 @include motion-ui-transitions;
 @include motion-ui-animations;
+
+
+
+// scratchboard
+
+* {
+	transition: all .3s ease;
+}
+hr {
+	margin: 30px 0;
+}
+
+nav .menu {
+	background: $white;
+	box-shadow:-3px 0px 50px -2px rgba(0, 0, 0, 0.15);
+	padding: 10px 0;
+
+	a {
+		color: $dark-gray;
+		font-size: 13px;
+		text-transform: uppercase;
+	}
+}
+body {
+	background: $light-gray;
+}
+
+.actor-grid {
+	padding-top: 15px;
+
+	.columns {
+		padding-bottom: 15px;
+	}
+	.actor {
+		position: relative;
+		display: block;
+		color: $black;
+		overflow: hidden;
+		
+		.name {
+			transform-origin: left top;
+			transform: rotate(-90deg);
+			position: absolute;
+			bottom: -37px;
+			left: 0;
+			font-style: italic;
+			padding: 5px 15px 8px;
+			background: white;
+			display: inline-block;
+		}
+		.stats {
+			width: 100%; 
+			height: auto; 
+			position: absolute;
+			bottom: -200px;
+			padding: 8px 15px;
+			background: $white;
+			font-size: 13px;
+			color: $dark-gray;
+
+			p {
+				margin: 0;
+			}
+		}
+		img {
+			filter: grayscale(100%);
+		}
+		&:hover,
+		&:focus {
+			box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.3);
+
+			.name {
+				left: -100px;
+			}
+			.stats {
+				bottom: 0;
+			}
+			img {
+				filter: grayscale(0%);
+			}
+		}
+	}
+}
+
+.talent {
+
+	.hero {
+		margin-bottom: 60px;
+
+		img {
+			width: 100%;
+			height: auto;
+			margin-bottom: 15px;
+		}
+		.full-text {
+			display: none;
+		}
+		.downloads {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-around;
+			text-align: center;
+		}
+		.stats {
+			list-style: none;
+		    margin: 0 0 15px;
+		    border-top: 2px solid red;
+		    padding: 15px;
+		    border-bottom: 2px solid red;
+		    font-size: 18px;
+		}
+		.clampToggle {
+
+			.closed {
+				display: none;
+			}
+			i {
+				background: #ff3333;
+			    display: inline-block;
+			    color: white;
+			    border-radius: 100px;
+			    text-align: center;
+			    padding: 0px 5px 5px 5px;
+			    height: 22px;
+			    font-size: 15px;
+			}
+		}
+	}
+	.cv {
+
+		.index {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-around;
+
+			a {
+				padding: 5px 15px;
+				border-radius: 100px;
+				margin: 5px 0;
+			}
+		}
+		.audio {
+			display: flex; 
+			flex-wrap: wrap; 
+			justify-content: space-between;
+
+			audio {
+				width: 80%;
+			}
+			a {
+			padding: 10px 12px;
+    		margin-top: -7px;
+    		}	
+		}
+		.orbit {
+			margin-bottom: 30px;
+
+			nav button {
+				width: 10px;
+				height: 10px;
+			}
+		}
+	}
+}
